@@ -665,7 +665,12 @@ rules:
 
   # https://eslint.org/docs/rules/no-mixed-operators
   #   disallow mixed binary operators
-  no-mixed-operators: warn
+  no-mixed-operators:
+    - warn
+    - groups:
+      - ["&", "|", "^", "~", "<<", ">>", ">>>"]
+      - ["==", "!=", "===", "!==", ">", ">=", "<", "<="]
+      - ["&&", "||"]
 
   # https://eslint.org/docs/rules/no-mixed-spaces-and-tabs
   # ✓ disallow mixed spaces and tabs for indentation
