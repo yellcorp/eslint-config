@@ -627,7 +627,7 @@ rules:
   max-len:
     - warn
     - code: 118
-      comments: 76
+      comments: 79
       ignoreRegExpLiterals: true
       ignoreTemplateLiterals: true
       ignoreUrls: true
