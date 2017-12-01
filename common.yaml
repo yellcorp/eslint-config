@@ -280,10 +280,6 @@ rules:
   # ✓ disallow octal literals
   no-octal: error
 
-  # https://eslint.org/docs/rules/no-param-reassign
-  #   disallow reassigning `function` parameters
-  no-param-reassign: error
-
   # https://eslint.org/docs/rules/no-proto
   #   disallow the use of the `__proto__` property
   no-proto: error

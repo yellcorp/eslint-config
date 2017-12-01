@@ -29,6 +29,10 @@ rules:
   #   disallow magic numbers
   no-magic-numbers: off
 
+  # https://eslint.org/docs/rules/no-param-reassign
+  #   disallow reassigning `function` parameters
+  no-param-reassign: off
+
   # https://eslint.org/docs/rules/no-restricted-properties
   #   disallow certain properties on certain objects
   no-restricted-properties: off
