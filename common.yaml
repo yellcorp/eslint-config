@@ -163,6 +163,7 @@ rules:
   #   require the use of `===` and `!==`
   eqeqeq:
     - error
+    - always
     - 'null': never
 
   # https://eslint.org/docs/rules/guard-for-in
