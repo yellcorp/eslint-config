@@ -1,0 +1,28 @@
+parserOptions:
+  ecmaVersion: 3
+
+extends:
+  - ./common.yaml
+
+rules:
+
+  ## Best Practices
+  ## --------------
+
+  # https://eslint.org/docs/rules/dot-notation
+  #   enforce dot notation whenever possible
+  dot-notation:
+    - warn
+    - allowKeywords: false
+
+
+  ## Stylistic Issues
+  ## ----------------
+
+  # https://eslint.org/docs/rules/quote-props
+  #   require quotes around object literal property names
+  quote-props:
+    - warn
+    - as-needed
+    - keywords: true
+

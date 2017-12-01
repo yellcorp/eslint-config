@@ -1,0 +1,175 @@
+# Common settings across all environments, ES 6
+
+# Note that parserOptions.sourceType isn't
+# specified. Set it in a file that uses this one
+# as a mixin.
+
+env:
+  es6: true
+
+rules:
+
+  ## Possible Errors
+  ## ---------------
+
+  # https://eslint.org/docs/rules/no-template-curly-in-string
+  #   disallow template literal placeholder syntax in regular strings
+  no-template-curly-in-string: error
+
+
+  ## Stylistic Issues
+  ## ----------------
+
+  # https://eslint.org/docs/rules/implicit-arrow-linebreak
+  #   enforce the location of arrow function bodies
+  implicit-arrow-linebreak:
+    - warn
+    - beside
+
+  # https://eslint.org/docs/rules/template-tag-spacing
+  #   require or disallow spacing between template tags and their literals
+  template-tag-spacing:
+    - error
+    - never
+
+
+  ## ECMAScript 6
+  ## ------------
+
+  # https://eslint.org/docs/rules/arrow-body-style
+  #   require braces around arrow function bodies
+  arrow-body-style:
+    - warn
+    - as-needed
+
+  # https://eslint.org/docs/rules/arrow-parens
+  #   require parentheses around arrow function arguments
+  arrow-parens:
+    - warn
+    - always
+
+  # https://eslint.org/docs/rules/arrow-spacing
+  #   enforce consistent spacing before and after the arrow in arrow functions
+  arrow-spacing:
+    - warn
+    - before: true
+      after: true
+
+  # https://eslint.org/docs/rules/constructor-super
+  # ✓ require `super()` calls in constructors
+  constructor-super: error
+
+  # https://eslint.org/docs/rules/generator-star-spacing
+  #   enforce consistent spacing around `*` operators in generator functions
+  # Undecided on this one, but opting to put it next to `function`
+  # because: 1) MDN documents it like that 2) it's not part of the
+  # function's name (i.e. it's not required when calling) and it is still
+  # required on anonymous generator functions
+  generator-star-spacing:
+    - warn
+    - before: false
+      after: true
+
+  # https://eslint.org/docs/rules/no-class-assign
+  # ✓ disallow reassigning class members
+  no-class-assign: error
+
+  # https://eslint.org/docs/rules/no-confusing-arrow
+  #   disallow arrow functions where they could be confused with comparisons
+  no-confusing-arrow:
+    - warn
+    - allowParens: true
+
+  # https://eslint.org/docs/rules/no-const-assign
+  # ✓ disallow reassigning `const` variables
+  no-const-assign: error
+
+  # https://eslint.org/docs/rules/no-dupe-class-members
+  # ✓ disallow duplicate class members
+  no-dupe-class-members: error
+
+  # https://eslint.org/docs/rules/no-duplicate-imports
+  #   disallow duplicate module imports
+  no-duplicate-imports: error
+
+  # https://eslint.org/docs/rules/no-new-symbol
+  # ✓ disallow `new` operators with the `Symbol` object
+  no-new-symbol: error
+
+  # https://eslint.org/docs/rules/no-this-before-super
+  # ✓ disallow `this`/`super` before calling `super()` in constructors
+  no-this-before-super: error
+
+  # https://eslint.org/docs/rules/no-useless-computed-key
+  #   disallow unnecessary computed property keys in object literals
+  no-useless-computed-key: error
+
+  # https://eslint.org/docs/rules/no-useless-constructor
+  #   disallow unnecessary constructors
+  no-useless-constructor: error
+
+  # https://eslint.org/docs/rules/no-useless-rename
+  #   disallow renaming import, export, and destructured assignments to the same name
+  no-useless-rename: warn
+
+  # https://eslint.org/docs/rules/no-var
+  #   require `let` or `const` instead of `var`
+  no-var: error
+
+  # https://eslint.org/docs/rules/object-shorthand
+  #   require or disallow method and property shorthand syntax for object literals
+  object-shorthand:
+    - warn
+    - always
+    - avoidExplicitReturnArrows: true
+
+  # https://eslint.org/docs/rules/prefer-arrow-callback
+  #   require using arrow functions for callbacks
+  prefer-arrow-callback: warn
+
+  # https://eslint.org/docs/rules/prefer-const
+  #   require `const` declarations for variables that are never reassigned after declared
+  prefer-const:
+    - warn
+    - destructuring: all
+      ignoreReadBeforeAssign: false
+
+  # https://eslint.org/docs/rules/prefer-numeric-literals
+  #   disallow `parseInt()` and `Number.parseInt()` in favor of binary, octal, and hexadecimal literals
+  prefer-numeric-literals: warn
+
+  # https://eslint.org/docs/rules/prefer-rest-params
+  #   require rest parameters instead of `arguments`
+  prefer-rest-params: error
+
+  # https://eslint.org/docs/rules/prefer-spread
+  #   require spread operators instead of `.apply()`
+  prefer-spread: error
+
+  # https://eslint.org/docs/rules/require-yield
+  # ✓ require generator functions to contain `yield`
+  require-yield: error
+
+  # https://eslint.org/docs/rules/rest-spread-spacing
+  #   enforce spacing between rest and spread operators and their expressions
+  rest-spread-spacing:
+    - error
+    - never
+
+  # https://eslint.org/docs/rules/symbol-description
+  #   require symbol descriptions
+  symbol-description: warn
+
+  # https://eslint.org/docs/rules/template-curly-spacing
+  #   require or disallow spacing around embedded expressions of template strings
+  template-curly-spacing:
+    - warn
+    - never
+
+  # https://eslint.org/docs/rules/yield-star-spacing
+  #   require or disallow spacing around the `*` in `yield*` expressions
+  yield-star-spacing:
+    - warn
+    - before: false
+      after: true
+

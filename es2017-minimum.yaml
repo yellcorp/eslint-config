@@ -1,0 +1,24 @@
+parserOptions:
+  ecmaVersion: 2017
+
+rules:
+
+  ## Possible Errors
+  ## ---------------
+
+  # https://eslint.org/docs/rules/no-await-in-loop
+  #   disallow `await` inside of loops
+  no-await-in-loop: warn
+
+
+  ## Best Practices
+  ## --------------
+
+  # https://eslint.org/docs/rules/no-return-await
+  #   disallow unnecessary `return await`
+  no-return-await: error
+
+  # https://eslint.org/docs/rules/require-await
+  #   disallow async functions which have no `await` expression
+  require-await: off
+

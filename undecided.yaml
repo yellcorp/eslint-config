@@ -1,0 +1,32 @@
+rules:
+
+  ## Possible Errors
+  ## ---------------
+
+  # https://eslint.org/docs/rules/no-console
+  # ✓ disallow the use of `console`
+  no-console: off
+
+  # https://eslint.org/docs/rules/no-control-regex
+  # ✓ disallow control characters in regular expressions
+  no-control-regex: error
+
+  # https://eslint.org/docs/rules/no-extra-parens
+  #   disallow unnecessary parentheses
+  no-extra-parens:
+    - off
+    - all
+    - conditionalAssign: false
+      enforceForArrowConditionals: false
+      ignoreJSX: multi-line
+      nestedBinaryExpressions: false
+      returnAssign: false
+
+
+  ## Stylistic Issues
+  ## ----------------
+
+  # https://eslint.org/docs/rules/wrap-regex
+  #   require parenthesis around regex literals
+  wrap-regex: off
+

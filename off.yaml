@@ -1,0 +1,211 @@
+rules:
+
+  ## Best Practices
+  ## --------------
+
+  # https://eslint.org/docs/rules/complexity
+  #   enforce a maximum cyclomatic complexity allowed in a program
+  complexity: off
+
+  # https://eslint.org/docs/rules/default-case
+  #   require `default` cases in `switch` statements
+  default-case: off
+
+  # https://eslint.org/docs/rules/no-div-regex
+  #   disallow division operators explicitly at the beginning of regular expressions
+  no-div-regex: off
+
+  # https://eslint.org/docs/rules/no-eq-null
+  #   disallow `null` comparisons without type-checking operators
+  no-eq-null: off
+
+  # https://eslint.org/docs/rules/no-labels
+  #   disallow labeled statements
+  # Labels are occasionally useful. Unintentional labels can be found through
+  # no-extra-label, no-label-var, and no-unused-labels
+  no-labels: off
+
+  # https://eslint.org/docs/rules/no-magic-numbers
+  #   disallow magic numbers
+  no-magic-numbers: off
+
+  # https://eslint.org/docs/rules/no-restricted-properties
+  #   disallow certain properties on certain objects
+  no-restricted-properties: off
+
+  # https://eslint.org/docs/rules/vars-on-top
+  #   require `var` declarations be placed at the top of their containing scope
+  vars-on-top: off
+
+
+  ## Variables
+  ## ---------
+
+  # https://eslint.org/docs/rules/init-declarations
+  #   require or disallow initialization in variable declarations
+  init-declarations: off
+
+  # https://eslint.org/docs/rules/no-restricted-globals
+  #   disallow specified global variables
+  no-restricted-globals: off
+
+  # https://eslint.org/docs/rules/no-undefined
+  #   disallow the use of `undefined` as an identifier
+  no-undefined: off
+
+
+  ## Node.js and CommonJS
+  ## --------------------
+
+  # https://eslint.org/docs/rules/no-process-env
+  #   disallow the use of `process.env`
+  no-process-env: error
+
+  # https://eslint.org/docs/rules/no-restricted-modules
+  #   disallow specified modules when loaded by `require`
+  no-restricted-modules: off
+
+
+  ## Stylistic Issues
+  ## ----------------
+
+  # https://eslint.org/docs/rules/array-element-newline
+  #   enforce line breaks after each array element
+  array-element-newline: off
+
+  # https://eslint.org/docs/rules/capitalized-comments
+  #   enforce or disallow capitalization of the first letter of a comment
+  capitalized-comments: off
+
+  # https://eslint.org/docs/rules/func-names
+  #   require or disallow named `function` expressions
+  func-names: off
+
+  # https://eslint.org/docs/rules/func-style
+  #   enforce the consistent use of either `function` declarations or expressions
+  func-style: off
+
+  # https://eslint.org/docs/rules/function-paren-newline
+  #   enforce consistent line breaks inside function parentheses
+  function-paren-newline: off
+
+  # https://eslint.org/docs/rules/id-length
+  #   enforce minimum and maximum identifier lengths
+  id-length: off
+
+  # https://eslint.org/docs/rules/id-match
+  #   require identifiers to match a specified regular expression
+  id-match: off
+
+  # https://eslint.org/docs/rules/line-comment-position
+  #   enforce position of line comments
+  line-comment-position: off
+
+  # https://eslint.org/docs/rules/max-depth
+  #   enforce a maximum depth that blocks can be nested
+  max-depth: off
+
+  # https://eslint.org/docs/rules/max-lines
+  #   enforce a maximum number of lines per file
+  max-lines: off
+
+  # https://eslint.org/docs/rules/max-nested-callbacks
+  #   enforce a maximum depth that callbacks can be nested
+  max-nested-callbacks: off
+
+  # https://eslint.org/docs/rules/max-params
+  #   enforce a maximum number of parameters in function definitions
+  max-params: off
+
+  # https://eslint.org/docs/rules/max-statements
+  #   enforce a maximum number of statements allowed in function blocks
+  max-statements: off
+
+  # https://eslint.org/docs/rules/multiline-comment-style
+  #   enforce a particular style for multiline comments
+  multiline-comment-style: off
+
+  # https://eslint.org/docs/rules/multiline-ternary
+  #   enforce newlines between operands of ternary expressions
+  multiline-ternary: off
+
+  # https://eslint.org/docs/rules/no-bitwise
+  #   disallow bitwise operators
+  no-bitwise: off
+
+  # https://eslint.org/docs/rules/no-continue
+  #   disallow `continue` statements
+  no-continue: off
+
+  # https://eslint.org/docs/rules/no-inline-comments
+  #   disallow inline comments after code
+  no-inline-comments: off
+
+  # https://eslint.org/docs/rules/no-multi-assign
+  #   disallow use of chained assignment expressions
+  no-multi-assign: off
+
+  # https://eslint.org/docs/rules/no-negated-condition
+  #   disallow negated conditions
+  no-negated-condition: off
+
+  # https://eslint.org/docs/rules/no-nested-ternary
+  #   disallow nested ternary expressions
+  no-nested-ternary: off
+
+  # https://eslint.org/docs/rules/no-plusplus
+  #   disallow the unary operators `++` and `--`
+  no-plusplus: off
+
+  # https://eslint.org/docs/rules/no-restricted-syntax
+  #   disallow specified syntax
+  no-restricted-syntax: off
+
+  # https://eslint.org/docs/rules/no-ternary
+  #   disallow ternary operators
+  no-ternary: off
+
+  # https://eslint.org/docs/rules/no-underscore-dangle
+  #   disallow dangling underscores in identifiers
+  no-underscore-dangle: off
+
+  # https://eslint.org/docs/rules/one-var-declaration-per-line
+  #   require or disallow newlines around variable declarations
+  one-var-declaration-per-line: off
+
+  # https://eslint.org/docs/rules/one-var
+  #   enforce variables to be declared either together or separately in functions
+  one-var: off
+
+  # https://eslint.org/docs/rules/padding-line-between-statements
+  #   require or disallow padding lines between statements
+  padding-line-between-statements: off
+
+  # https://eslint.org/docs/rules/sort-keys
+  #   require object keys to be sorted
+  sort-keys: off
+
+  # https://eslint.org/docs/rules/sort-vars
+  #   require variables within the same declaration block to be sorted
+  sort-vars: off
+
+
+  ## ECMAScript 6
+  ## ------------
+
+  # https://eslint.org/docs/rules/no-restricted-imports
+  #   disallow specified modules when loaded by `import`
+  no-restricted-imports: off
+
+  # https://eslint.org/docs/rules/prefer-destructuring
+  #   require destructuring from arrays and/or objects
+  prefer-destructuring: off
+
+  # https://eslint.org/docs/rules/prefer-template
+  #   require template literals instead of string concatenation
+  prefer-template: off
+
+  # https://eslint.org/docs/rules/sort-imports
+  #   enforce sorted import declarations within modules
+  sort-imports: off
+

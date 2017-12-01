@@ -1,0 +1,24 @@
+rules:
+
+  ## Possible Errors
+  ## ---------------
+
+  # https://eslint.org/docs/rules/valid-jsdoc
+  #   enforce valid JSDoc comments
+  valid-jsdoc: off
+
+
+  ## Stylistic Issues
+  ## ----------------
+
+  # https://eslint.org/docs/rules/require-jsdoc
+  #   require JSDoc comments
+  require-jsdoc:
+    - warn
+    - require:
+        ArrowFunctionExpression: false
+        ClassDeclaration: true
+        FunctionDeclaration: true
+        FunctionExpression: false
+        MethodDefinition: true
+

@@ -1,0 +1,7 @@
+parserOptions:
+  ecmaVersion: 6
+
+extends:
+  - ./common.yaml
+  - ./es6-minimum.yaml
+
