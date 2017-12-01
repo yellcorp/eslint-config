@@ -419,7 +419,15 @@ rules:
 
   # https://eslint.org/docs/rules/no-unused-vars
   # ✓ disallow unused variables
-  no-unused-vars: error
+  no-unused-vars:
+    - error
+    - vars: all
+      varsIgnorePattern: '^_'
+      args: all
+      argsIgnorePattern: '^_'
+      caughtErrors: all
+      caughtErrorsIgnorePattern: "^_"
+
 
   # https://eslint.org/docs/rules/no-use-before-define
   #   disallow the use of variables before they are defined
